@@ -1,0 +1,1 @@
+{"name":"mobile-static-blog","private":true,"scripts":{"build":"node scripts/build.js","dev":"node scripts/dev.js"},"dependencies":{"gray-matter":"^4.0.3","highlight.js":"^11.11.1","katex":"^0.16.25","markdown-it":"^14.1.0","markdown-it-anchor":"^9.2.0","markdown-it-footnote":"^4.0.0","markdown-it-task-lists":"^2.1.1"}}

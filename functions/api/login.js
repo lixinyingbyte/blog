@@ -1,0 +1,1 @@
+import {json,session} from '../_lib.js';export async function onRequestPost({request,env}){const {password}=await request.json();if(password!==env.ADMIN_PASSWORD)return json({error:'密码错误'},401);return json({ok:true},200,{'set-cookie':`blog_session=${await session(env)}; Path=/; HttpOnly; Secure; SameSite=Strict; Max-Age=604800`})}
